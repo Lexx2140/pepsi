@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  max-width: 1440px;
+  background: #0065C3;
+  min-height: 100vh;
+  margin: 0 auto; }
+
+header {
+  height: 60px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px; }
+  header .logo img {
+    width: 50px;
+    height: auto;
+    margin-right: 50px;
+    cursor: pointer;
+    transition: transform 2s ease; }
+    header .logo img:hover {
+      transform: rotate(270deg); }
+  header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+  header ul {
+    list-style-type: none; }
+    header ul li {
+      display: block;
+      float: left; }
+      header ul li a {
+        font-family: 'Open Sans';
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #fff;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: block;
+        margin-right: 30px; }
+      header ul li:hover {
+        opacity: .8; }
+  header button {
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: block;
+    background: #EB1933;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0 0 0 #0065C3;
+    border: 2px solid transparent; }
+    header button:hover {
+      box-shadow: inset 300px 0 0 #0065C3;
+      border: 2px solid white;
+      color: white; }
+
+.first-screen {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .first-screen img {
+    height: 90vh;
+    width: auto; }
+  .first-screen .moto {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 60px;
+    text-transform: uppercase;
+    color: #fff; }

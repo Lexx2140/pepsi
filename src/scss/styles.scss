@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+
+$link_hover: all .3s ease;
+$blue: #0065C3;
+
+@mixin link_txt {
+	font-family: 'Open Sans';
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #fff;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 19px;
+	cursor: pointer;
+	transition: $link_hover;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1440px;
+    background: $blue;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+header {
+    height: 60px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+
+    .logo img {
+        width: 50px;
+        height: auto;
+        margin-right: 50px;
+        cursor: pointer;
+        transition: transform 2s ease;
+
+        &:hover {
+        	transform: rotate(270deg);
+        }
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    ul {
+        list-style-type: none;
+
+        li {
+            display: block;
+            float: left;
+
+            a {
+        		@include link-txt();
+                display: block;
+                margin-right: 30px;
+            }
+
+            &:hover {
+				opacity: .8;
+            }
+        }
+    }
+
+    button {
+    	@include link-txt();
+        display: block;
+        background: #EB1933;
+        border: none;
+        border-radius: 20px;
+        padding: 10px 20px;
+        position: relative;
+        overflow: hidden;
+        box-shadow: inset 0 0 0 $blue;
+        border: 2px solid transparent;
+
+        &:hover {
+        	box-shadow: inset 300px 0 0 $blue;
+        	border: 2px solid white;
+        	color: white;
+        }
+    }
+
+}
+
+.first-screen {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	img {
+		height: 90vh;
+		width: auto;
+	}
+
+	.moto {
+		font-family: 'Helvetica';
+		font-style: normal;
+		font-weight: 800;
+		font-size: 60px;
+		// line-height: 120px;
+		text-transform: uppercase;
+		color: #fff;
+	}
+}
