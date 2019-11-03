@@ -5,14 +5,13 @@
   box-sizing: border-box; }
 
 body {
-  max-width: 1440px;
   background: #0065C3;
-  min-height: 100vh;
   margin: 0 auto; }
 
 header {
-  height: 60px;
-  margin-top: 20px;
+  position: fixed;
+  right: 0;
+  left: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -73,9 +72,12 @@ header {
       color: white; }
 
 .first-screen {
+  height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  background: url("/assets/img/fs.png");
+  object-fit: cover; }
   .first-screen img {
     height: 90vh;
     width: auto; }
